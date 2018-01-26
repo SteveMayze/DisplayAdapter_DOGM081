@@ -83,6 +83,118 @@ F 4 "Value" H 2750 3400 60  0001 C CNN "Link"
 	1    2750 3400
 	1    0    0    -1  
 $EndComp
+Text Label 2600 3150 0    60   ~ 0
+Vdd
+$Comp
+L GND #PWR101
+U 1 1 598B209F
+P 2500 2500
+F 0 "#PWR101" H 2500 2250 50  0001 C CNN
+F 1 "GND" H 2500 2350 50  0000 C CNN
+F 2 "" H 2500 2500 60  0000 C CNN
+F 3 "" H 2500 2500 60  0000 C CNN
+	1    2500 2500
+	1    0    0    -1  
+$EndComp
+Text Label 2750 4350 0    60   ~ 0
+Vdd
+$Comp
+L GND #PWR103
+U 1 1 598B248A
+P 5050 4200
+F 0 "#PWR103" H 5050 3950 50  0001 C CNN
+F 1 "GND" H 5050 4050 50  0000 C CNN
+F 2 "" H 5050 4200 60  0000 C CNN
+F 3 "" H 5050 4200 60  0000 C CNN
+	1    5050 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR102
+U 1 1 598B252B
+P 6200 2550
+F 0 "#PWR102" H 6200 2300 50  0001 C CNN
+F 1 "GND" H 6200 2400 50  0000 C CNN
+F 2 "" H 6200 2550 60  0000 C CNN
+F 3 "" H 6200 2550 60  0000 C CNN
+	1    6200 2550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4050 1850
+NoConn ~ 4150 1850
+NoConn ~ 5250 1850
+NoConn ~ 5350 1850
+Text Label 2750 4050 0    60   ~ 0
+MOSI
+Text Label 2750 4200 0    60   ~ 0
+CLK
+Text Label 2750 4500 0    60   ~ 0
+RS
+Text Label 2750 4650 0    60   ~ 0
+CSB
+Text Label 2600 2400 0    60   ~ 0
+GND
+Text Label 5950 2450 0    60   ~ 0
+GND
+Text Label 8300 3000 0    60   ~ 0
+GND
+Text Label 8300 2300 0    60   ~ 0
+Vdd
+Text Label 8300 2400 0    60   ~ 0
+MOSI
+Text Label 8300 2600 0    60   ~ 0
+CLK
+Text Label 8300 2700 0    60   ~ 0
+RS
+Text Label 8300 2800 0    60   ~ 0
+CSB
+$Comp
+L R R103
+U 1 1 5A6B86C1
+P 6700 4300
+F 0 "R103" V 6780 4300 50  0000 C CNN
+F 1 "R" V 6700 4300 50  0000 C CNN
+F 2 "" V 6630 4300 50  0001 C CNN
+F 3 "" H 6700 4300 50  0001 C CNN
+	1    6700 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R102
+U 1 1 5A6B87AF
+P 6450 4300
+F 0 "R102" V 6530 4300 50  0000 C CNN
+F 1 "R" V 6450 4300 50  0000 C CNN
+F 2 "" V 6380 4300 50  0001 C CNN
+F 3 "" H 6450 4300 50  0001 C CNN
+	1    6450 4300
+	-1   0    0    1   
+$EndComp
+Text Label 6400 2900 2    60   ~ 0
+A1/A
+Text Label 6400 3200 2    60   ~ 0
+A2/B
+Text Label 6400 3000 2    60   ~ 0
+C1/R
+Text Label 6400 3100 2    60   ~ 0
+C2/G
+Text Label 8000 3900 2    60   ~ 0
+DISPLAY
+$Comp
+L GND #PWR105
+U 1 1 5A6B8C02
+P 6600 4850
+F 0 "#PWR105" H 6600 4600 50  0001 C CNN
+F 1 "GND" H 6600 4700 50  0000 C CNN
+F 2 "" H 6600 4850 60  0000 C CNN
+F 3 "" H 6600 4850 60  0000 C CNN
+	1    6600 4850
+	1    0    0    -1  
+$EndComp
+Text Label 6200 3900 0    60   ~ 0
+C1/R
+Text Label 6200 4050 0    60   ~ 0
+C2/G
 Wire Wire Line
 	3450 2650 2750 2650
 Wire Wire Line
@@ -96,25 +208,12 @@ Wire Wire Line
 Wire Wire Line
 	3200 3150 2600 3150
 Connection ~ 3200 3250
-Text Label 2600 3150 0    60   ~ 0
-Vdd
 Wire Wire Line
 	3450 2200 2750 2200
 Wire Wire Line
 	3450 2400 2500 2400
 Wire Wire Line
 	2500 2400 2500 2500
-$Comp
-L GND #PWR01
-U 1 1 598B209F
-P 2500 2500
-F 0 "#PWR01" H 2500 2250 50  0001 C CNN
-F 1 "GND" H 2500 2350 50  0000 C CNN
-F 2 "" H 2500 2500 60  0000 C CNN
-F 3 "" H 2500 2500 60  0000 C CNN
-	1    2500 2500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4050 3950 4050 4050
 Wire Wire Line
@@ -149,19 +248,6 @@ Wire Wire Line
 Wire Wire Line
 	4300 4350 2750 4350
 Connection ~ 4300 4200
-Text Label 2750 4350 0    60   ~ 0
-Vdd
-$Comp
-L GND #PWR02
-U 1 1 598B248A
-P 5050 4200
-F 0 "#PWR02" H 5050 3950 50  0001 C CNN
-F 1 "GND" H 5050 4050 50  0000 C CNN
-F 2 "" H 5050 4200 60  0000 C CNN
-F 3 "" H 5050 4200 60  0000 C CNN
-	1    5050 4200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5050 3950 5050 4200
 Wire Wire Line
@@ -172,74 +258,121 @@ Wire Wire Line
 	5350 3950 5350 4650
 Wire Wire Line
 	5350 4650 2750 4650
-$Comp
-L GND #PWR03
-U 1 1 598B252B
-P 6200 2550
-F 0 "#PWR03" H 6200 2300 50  0001 C CNN
-F 1 "GND" H 6200 2400 50  0000 C CNN
-F 2 "" H 6200 2550 60  0000 C CNN
-F 3 "" H 6200 2550 60  0000 C CNN
-	1    6200 2550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5650 2750 5950 2750
 Wire Wire Line
 	6200 2550 6200 2450
 Wire Wire Line
 	6200 2450 5650 2450
-NoConn ~ 4050 1850
-NoConn ~ 4150 1850
-NoConn ~ 5250 1850
-NoConn ~ 5350 1850
-Text Label 2750 4050 0    60   ~ 0
-MOSI
-Text Label 2750 4200 0    60   ~ 0
-CLK
-Text Label 2750 4500 0    60   ~ 0
-RS
-Text Label 2750 4650 0    60   ~ 0
-CSB
+Wire Wire Line
+	8700 2300 8300 2300
+Wire Wire Line
+	8700 2400 8300 2400
+Wire Wire Line
+	8700 2600 8300 2600
+Wire Wire Line
+	8700 2700 8300 2700
+Wire Wire Line
+	8700 2800 8300 2800
+Wire Wire Line
+	5650 2900 6400 2900
+Wire Wire Line
+	6400 3200 5650 3200
+Wire Wire Line
+	5650 3000 6400 3000
+Wire Wire Line
+	5650 3100 6400 3100
+Wire Wire Line
+	7100 3900 8000 3900
+Wire Wire Line
+	6700 4600 6700 4450
+Wire Wire Line
+	6450 4450 6450 4600
+Wire Wire Line
+	6450 4600 6700 4600
+Wire Wire Line
+	6600 4600 6600 4850
+Connection ~ 6600 4600
+Wire Wire Line
+	6450 4150 6450 4050
+Wire Wire Line
+	6450 4050 6200 4050
+Wire Wire Line
+	6700 4150 6700 3900
+Wire Wire Line
+	6700 3900 6200 3900
+Wire Wire Line
+	7100 3900 7100 4800
+Text Label 7100 4800 2    60   ~ 0
+A1/A
+Wire Wire Line
+	7450 3900 7450 4250
+Connection ~ 7450 3900
 $Comp
-L CONN_01X06 P1
-U 1 1 598B27C6
-P 7500 3050
-F 0 "P1" H 7500 3400 50  0000 C CNN
-F 1 "CONN_01X06" V 7600 3050 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x06_Pitch2.54mm" H 7500 3050 60  0001 C CNN
-F 3 "" H 7500 3050 60  0000 C CNN
-	1    7500 3050
-	1    0    0    -1  
+L R R104
+U 1 1 5A6B8EF0
+P 7450 4400
+F 0 "R104" V 7530 4400 50  0000 C CNN
+F 1 "R" V 7450 4400 50  0000 C CNN
+F 2 "" V 7380 4400 50  0001 C CNN
+F 3 "" H 7450 4400 50  0001 C CNN
+	1    7450 4400
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7300 2800 6900 2800
+	7450 4550 7450 4800
+Text Label 7450 4800 2    60   ~ 0
+A2/B
+$Comp
+L R R101
+U 1 1 5A6B9127
+P 8650 4200
+F 0 "R101" V 8730 4200 50  0000 C CNN
+F 1 "R" V 8650 4200 50  0000 C CNN
+F 2 "" V 8580 4200 50  0001 C CNN
+F 3 "" H 8650 4200 50  0001 C CNN
+	1    8650 4200
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	7300 2900 6900 2900
+	8650 4050 8650 3900
 Wire Wire Line
-	7300 3000 6900 3000
+	8650 3900 9100 3900
+Text Label 9100 3900 2    60   ~ 0
+A2/B
 Wire Wire Line
-	7300 3100 6900 3100
+	8650 4600 8650 4350
+$Comp
+L GND #PWR104
+U 1 1 5A6B939C
+P 8650 4600
+F 0 "#PWR104" H 8650 4350 50  0001 C CNN
+F 1 "GND" H 8650 4450 50  0000 C CNN
+F 2 "" H 8650 4600 60  0000 C CNN
+F 3 "" H 8650 4600 60  0000 C CNN
+	1    8650 4600
+	1    0    0    -1  
+$EndComp
+Text Notes 7550 4450 0    60   ~ 0
+No POP \nfor RGB
+$Comp
+L Conn_01x08_Male J101
+U 1 1 5A6B955F
+P 8900 2600
+F 0 "J101" H 8900 3000 50  0000 C CNN
+F 1 "Conn_01x08_Male" H 8500 2600 50  0000 C CNN
+F 2 "" H 8900 2600 50  0001 C CNN
+F 3 "" H 8900 2600 50  0001 C CNN
+	1    8900 2600
+	-1   0    0    -1  
+$EndComp
 Wire Wire Line
-	7300 3200 6900 3200
+	8700 2900 8300 2900
 Wire Wire Line
-	7300 3300 6900 3300
-Text Label 2600 2400 0    60   ~ 0
-GND
-Text Label 5950 2450 0    60   ~ 0
-GND
-Text Label 6900 3300 0    60   ~ 0
-GND
-Text Label 6900 2800 0    60   ~ 0
-Vdd
-Text Label 6900 2900 0    60   ~ 0
-MOSI
-Text Label 6900 3000 0    60   ~ 0
-CLK
-Text Label 6900 3100 0    60   ~ 0
-RS
-Text Label 6900 3200 0    60   ~ 0
-CSB
-Text Notes 6900 3500 0    60   ~ 0
-Female, bottom side
+	8700 3000 8300 3000
+Text Label 8300 2900 0    60   ~ 0
+DISPLAY
+NoConn ~ 8700 2500
+Text Notes 8250 2500 0    60   ~ 0
+MISO/NC
 $EndSCHEMATC
